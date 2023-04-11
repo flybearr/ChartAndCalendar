@@ -43,7 +43,7 @@ export default function MultipleChart() {
         type: "bar",
         label: "Dataset 2",
         borderColor: "rgb(0, 0, 0)",
-        backgroundColor: ["#ff6b21", "#faebd7"],
+        backgroundColor: ["#eca471", "#faeba7"],
         borderWidth: 2,
         fill: false,
         data: parkingData.map((v, i) => v.paymoney),

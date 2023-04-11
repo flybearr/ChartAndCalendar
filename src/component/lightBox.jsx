@@ -7,7 +7,6 @@ export default function LightBox({
   btnActive,
   setBtnActive,
 }) {
-
   return (
     <div
       className="box_wrap"
@@ -21,9 +20,9 @@ export default function LightBox({
           e.stopPropagation();
         }}
       >
-        <p>
+        <div className="set_title">
           {selMonth}月{selDay}日 &nbsp; UPS設定
-        </p>
+        </div>
 
         <div className="ups_btn">
           <p>UPS開關</p>

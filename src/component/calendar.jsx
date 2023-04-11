@@ -155,7 +155,9 @@ function Calendar() {
         },
       }
     );
-    console.log(result.data);
+    if (result.data.success === true) {
+      alert("上傳成功");
+    }
   };
   return (
     <>
@@ -176,7 +178,7 @@ function Calendar() {
         encType="multipart/form-data"
         ref={JsonForm}
       >
-        <label htmlFor="">匯入新版行事曆</label>
+        <label htmlFor="">匯入當年行事曆</label>
         <br />
         <input
           type="file"
@@ -222,7 +224,7 @@ function Calendar() {
         {day.map((v, i) => {
           return (
             <div className="weekday" key={v}>
-              {v}
+              <span>{v}</span>
             </div>
           );
         })}
